@@ -375,7 +375,7 @@
                 </div>
             </div>
 
-            <div class="window-conteent">
+            <div class="window-content">
                 <div class="app-window">
                     <div class="app-heaader">
                         <span class="app-title">POMODORO TIMER</span>
@@ -395,10 +395,54 @@
                             <div class="timer-display" id="timerDisplay">25:00</div>
                         </div>
 
-                        
+                        <div class="controls">
+                            <button class="control-button start-btn" id="startBtn">Start</button>
+                            <button class="control-button" id="pauseBtn">Pause</button>
+                            <button class="control-button" id="resetBtn">Reset</button>
+                        </div>
+
+                        <div class="settings-section">
+                            <div class="settings-panel">
+                                <div class="settings-title">Timer Settings</div>
+                                <div class="settings-item">
+                                    <label class="settings-label">Focus Duration:</label>
+                                    <input type="number" class="settings-input" id="workTime" value="25" min="1" max="60">                                </div>
+                            </div>
+
+                            <div class="settings-item">
+                                <label class="settings-label">Break Duration:</label>
+                                <input type="number" class="settings-input" id="breakTime" value="5" min="1" max="30">
+                            </div>
+                        </div>
+
+                        <div class="stats-panel">
+                            <div class="settings-title">Session Stats</div>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-number" id="completedSessions">0</span>
+                                    <span class="stat-label">Completed</span>
+                                </div>
+
+                                <div class="stat-item">
+                                    <span class="stat-number" id="totalTime">0</span>
+                                    <span class="stat-label">Total Min</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="taskbar">
+            <div class="taskbar-item">Start</div>
+            <div class="taskbar-item active">Focus Timer</div>
+            <div class="taskbar-item">My Computer</div>
+        </div>
+
+
+
+
+        
     </body>
 </html>
