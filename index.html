@@ -406,7 +406,8 @@
                                 <div class="settings-title">Timer Settings</div>
                                 <div class="settings-item">
                                     <label class="settings-label">Focus Duration:</label>
-                                    <input type="number" class="settings-input" id="workTime" value="25" min="1" max="60">                                </div>
+                                    <input type="number" class="settings-input" id="workTime" value="25" min="1" max="60">
+                                </div>
                             </div>
 
                             <div class="settings-item">
@@ -441,8 +442,40 @@
         </div>
 
 
+        <script>
+            class PomodoroTimer {
+                constructor() {
+                    this.isRunning = false;
+                    this.isWorkSession = true;
+                    this.timeLeft = 25 * 60;
+                    this.totalTime = 25 * 60;
+                    this.completedSessions = 0;
+                    this.totalMinutes = 0;
+                    this.timer = null;
+                    this.initializeElements();
+                    this.bindEvents();
+                    this.updateDisplay();
+                }
+
+                initializeElements() {
+                    this.timerDisplay = document.getElementById('timerDisplay');
+                    this.sessionType = document.getElementById('sessionType');
+                    this.sessionIndicator = document.getElementById('sessionIndicator');
+                    this.startBtn = document.getElementById('startBtn');
+                    this.pauseBtn = document.getElementById('pauseBtn');
+                    this.resetBtn = document.getElementById('resetBtn');
+                    this.workTimeInput = document.getElementById('workTime');
+                    this.breakTimeInput = document.getElementById('breakTime');
+                    this.completedSessionsDisplay = document.getElementById('completedSessions');
+                    this.totalTimeDisplay = document.getElementById('totalTime');
+                }
+
+                bindEvents() {
+                    // to be continued
+                }
+            }
+        </script>
 
 
-        
     </body>
 </html>
