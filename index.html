@@ -35,7 +35,7 @@
 
             .browser-header {
                 background: #8FA085;
-                border-bottom: 3px soid #8B7355;
+                border-bottom: 3px solid #8B7355;
                 padding: 12px 16px;
                 display: flex;
                 align-items: center;
@@ -98,7 +98,7 @@
                 max-width: 600px;
             }
 
-            .app-headder {
+            .app-header {
                 background: #D4A574;
                 border-bottom: 3px solid #8B7355;
                 padding: 12px 20px;
@@ -114,7 +114,7 @@
                 letter-spacing: 1px;
             }
 
-            .app-conttrols {
+            .app-controls {
                 display: flex;
                 gap: 6px;
             }
@@ -346,7 +346,7 @@
                     grid-template-columns: 1fr;
                 }
                 .controls {
-                    flex-direction: colummn;
+                    flex-direction: column;
                     align-items: center;
                 }
                 .timer-display {
@@ -377,7 +377,7 @@
 
             <div class="window-content">
                 <div class="app-window">
-                    <div class="app-heaader">
+                    <div class="app-header">
                         <span class="app-title">POMODORO TIMER</span>
                         <div class="app-controls">
                             <div class="app-control"></div>
@@ -396,9 +396,9 @@
                         </div>
 
                         <div class="controls">
-                            <button class="control-button start-btn" id="startBtn">Start</button>
-                            <button class="control-button" id="pauseBtn">Pause</button>
-                            <button class="control-button" id="resetBtn">Reset</button>
+                            <button class="control-btn start-btn" id="startBtn">Start</button>
+                            <button class="control-btn" id="pauseBtn">Pause</button>
+                            <button class="control-btn" id="resetBtn">Reset</button>
                         </div>
 
                         <div class="settings-section">
@@ -408,25 +408,25 @@
                                     <label class="settings-label">Focus Duration:</label>
                                     <input type="number" class="settings-input" id="workTime" value="25" min="1" max="60">
                                 </div>
-                            </div>
 
-                            <div class="settings-item">
-                                <label class="settings-label">Break Duration:</label>
-                                <input type="number" class="settings-input" id="breakTime" value="5" min="1" max="30">
+                                <div class="settings-item">
+                                    <label class="settings-label">Break Duration:</label>
+                                    <input type="number" class="settings-input" id="breakTime" value="5" min="1" max="30">
+                                </div>
                             </div>
                         </div>
 
                         <div class="stats-panel">
                             <div class="settings-title">Session Stats</div>
                             <div class="stats-grid">
-                                <div class="stat-item">
-                                    <span class="stat-number" id="completedSessions">0</span>
-                                    <span class="stat-label">Completed</span>
+                                <div class="stats-item">
+                                    <span class="stats-number" id="completedSessions">0</span>
+                                    <span class="stats-label">Completed</span>
                                 </div>
 
-                                <div class="stat-item">
-                                    <span class="stat-number" id="totalTime">0</span>
-                                    <span class="stat-label">Total Min</span>
+                                <div class="stats-item">
+                                    <span class="stats-number" id="totalTime">0</span>
+                                    <span class="stats-label">Total Min</span>
                                 </div>
                             </div>
                         </div>
